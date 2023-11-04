@@ -1,0 +1,44 @@
+import java.util.*;
+public class Book
+{
+	public static void main(String[]args)
+	{
+		Book b= new Book();
+		b.display();
+		Reference_book r= new Reference_book();
+		r.display();
+		Magazine_book m= new Magazine_book();
+		m.display();
+	}
+	public void Display()
+	{	
+		String Name=("Concepts of Physics");
+		String Author=("H.C.Verma");
+		Int Volume=2
+		sytem.out.println(Name+Author+Volume);
+	}
+}
+public class Reference_book exntends book
+{
+	@Override
+	public void Display()
+	{
+		String Name=("Problems in General Physics");
+		String Author=("I.E.Irodov");
+		Int Volume=1
+		sytem.out.println(Name+Author+Volume);
+	}
+}
+
+public class Magazine_book exntends book
+{
+	@Override
+	public void Display()
+	{
+		String Name=("University Physics");
+		String Author=("Freedman");
+		Int Volume=3
+		sytem.out.println(Name+Author+Volume);
+	}
+}
+	

@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class Bank
+{
+	String name;
+	int accnum;
+	int contactnum;
+	String address;
+	double balance;
+ 	 Scanner sc= new Scanner(System.in);
+		public Bank()
+		{
+		System.out.println("Enter your name:");
+		name=sc.nextLine();
+		}
+		public void createAccount()
+			{
+			System.out.println("Enter your account number:");
+				accnum=sc.nextInt();
+			System.out.println("Enter you contact numer:");
+				contactnum=sc.nextInt();
+			System.out.println("Enter your address:");
+				address=sc.nextLine();
+			System.out.println("Account created successufully");
+			}
+
+
+		public void Interest()
+			{
+			double rate=0.305;
+			double interest=0.305*rate;
+			balance+=interest;
+			System.out.println("Interest added:"+interest);
+			}
+
+		public void Display()
+			{
+			System.out.println("Enter Amount:");
+			int amount=sc.nextInt();
+			if(amount<=0)
+				{
+				system.out.println("Invalid Amount");
+				return;
+				}
+			balance= balance+amount;
+			Sytem.out.println("Account Balance:"+balance);
+			}
+		public void Withdrawal()
+			{
+			System.out.println("Enter Amount:");
+			int amount=sc.nextInt();
+				if(amount<=0)
+				{
+					System.out.println("INVALID AMOUNT");
+					return;
+				}
+				if(balance<amount)
+				{
+					System.out.println("INSUFFICIENT BALANCE");
+				}
+				else
+					{
+					balance=balance-amount;
+					System.out.println("Account Balance:"+balance);
+					}
+			}
+
+		public void displayMenu()
+			{
+				system.out.println(" PRESS 1.open account\n 2.Deposit\n 3.Withdrawal\n Check Balance\n 5.Interest\n6.EXIT");
+			}
+
+
+		public static void main(String[]args)
+			{
+				System.out.println("Depository bank of zurich");
+				bank b1=new Bank();
+				b1.displayMenu();
+				Scanner in= new scanner(system.in);
+				int choice;
+				do
+					{
+			choice=in.nextInt();
+			switch(choice)
+			{
+				case 1

@@ -1,0 +1,18 @@
+public class commandlineArguments
+{
+	public class void main(String[]args)
+	{
+	if(args.lenght>0)
+	{
+		system.out.println("Command Line Arguments:");
+		for(String arg:args)
+		{
+			system.out.println(arg);
+		}
+	}
+	else
+	{
+		system.out.println("No Command line arguments provided.");
+	}
+}
+}	

@@ -1,0 +1,18 @@
+class Main
+{
+	public main()
+	{
+		system.out.println("Default constructor called");
+	}
+		public main(String str)
+		{
+		this();
+			{
+				System.out.println("Parametrized constructor called"+str);
+			}
+	}
+public static void main(String[]args)
+	{
+		Main object= new Main("Test");
+	}
+}
